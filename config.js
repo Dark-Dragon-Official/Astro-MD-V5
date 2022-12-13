@@ -4,7 +4,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER.split(",")
-global.mongodb = process.env.MONGODB_URI || "Enter-MongoURI-HERE"
+global.mongodb = process.env.MONGODB_URI || "mongodb://uenyt3ci0dl5v13xzn8a:c1h4M0IYuzf8jbSh2NiV@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/bkcrrbmfolbq9gd?replicaSet=rs0"
 global.port= process.env.PORT || 5000
 global.email = 'vihangaytbisnuss@gmail.com'
 global.github = 'https://github.com/vihangayt0/Astro-MD-V5'
@@ -23,28 +23,28 @@ module.exports = {
   ANTI_SPAM: process.env.ANTI_SPAM || 'true',
   ibmg: process.env.INBOX_BL_MSG || '*inbox not allowed*',
   ibmgL: process.env.GROUP_ONLY || 'false',
-  grlink: process.env.GroupLink || '',
+  grlink: process.env.GroupLink || 'https://chat.whatsapp.com/Cp96xRSt5DhBqxzjBzL0oc',
   ownername:process.env.OWNER_NAME || 'Vihangaashinshana11',
-  sessionName: process.env.SESSION_ID || 'PUT-HERE',
+  sessionName: process.env.SESSION_ID || 'eUhhRER2MHE=',
   author: process.env.PACK_INFO.split(";")[0] || 'author', 
   packname: process.env.PACK_INFO.split(";")[1] || 'Name',
   autoreaction: process.env.AUTO_REACTION || 'off',
   alwaysonline: process.env.ALWAYS_ONLINE || 'false',
-  antifake : process.env.FAKE_COUNTRY_CODE || '',
+  antifake : process.env.FAKE_COUNTRY_CODE || '1',
   readmessage: process.env.READ_MESSAGE || false,
   HANDLERS: process.env.PREFIX || ['.'],
   nsfw_detect_ai : process.env.NSFW_DETECTION_AI || 'false',
   pmpermit: process.env.PMPERMIT || "false",
-  mongodb_url: process.env.MONGODB_URI || "Enter-Mongo-URI-HERE",
+  mongodb_url: process.env.MONGODB_URI || "mongodb://uenyt3ci0dl5v13xzn8a:c1h4M0IYuzf8jbSh2NiV@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/bkcrrbmfolbq9gd?replicaSet=rs0",
   warncount : process.env.WARN_COUNT || 3,
   disablepm: process.env.DISABLE_PM || "flase",
   levelupmessage: process.env.LEVEL_UP_MESSAGE || 'false',
   antilinkaction: process.env.ANTILINK_ACTION || 'remove',
   BRANCH: 'main',
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || 'put-key-here',
-  VERSION: process.env.VERSION === undefined ? 'v5.0' : process.env.VERSION,
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || 'mongodb://uenyt3ci0dl5v13xzn8a:c1h4M0IYuzf8jbSh2NiV@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/bkcrrbmfolbq9gd?replicaSet=rs0',
+  VERSION: process.env.VERSION === undefined ? 'v5.0' : process.env.VERSION || '3.0',
   LANG: process.env.THEME|| 'SI',
-  WORKTYPE: process.env.WORKTYPE === undefined ? 'public' : process.env.WORKTYPE
+  WORKTYPE: process.env.WORKTYPE === undefined ? 'public' : process.env.WORKTYPE || 'public'
 };
 
 
